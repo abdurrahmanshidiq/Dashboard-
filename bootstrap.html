@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP 101</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    <h1>BOOTSTRAP 101</h1>
+
+    <h1 class="display-1">My Dashboard 1</h1>
+    <h1 class="display-4">My Dashboard 4</h1>
+
+    <p class='font-weight-bold'>
+        Font Weight bold
+    </p>
+
+    <p class="font-italic">
+        Font Italic
+    </p>
+
+    <p class="text-uppercase">
+        Text Uppercase
+    </p>
+
+    <p class="text-lowercase">
+        Text Lowercase
+    </p>
+
+    <p class="text-capitalize">
+        text capitalized
+    </p>
+
+
+    <!-- Alignment -->
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor quaerat, aliquid soluta, repellendus nihil laudantium eaque cupiditate architecto suscipit excepturi reiciendis
+    </p>
+
+    <p class="text-left">
+        Align text left Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, consequatur inventore?
+    </p>
+
+    <p class="text-center">
+        Align text center Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, asperiores cumque.
+    </p>
+
+    <p class="text-right">
+        Align text right Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, animi sint!
+    </p>
+
+<!-- Color -->
+<p class="text-primary">Text Primary Color</p>
+<p class="text-secondary">Text Secondary Color</p>
+<p class="text-success">Text Success Color</p>
+<p class="text-danger">Text Danger Color</p>
+<p class="text-warning">Text Warning Color</p>
+<p class="text-dark">Text Dark Color</p>
+
+
+<!-- Box Model -->
+
+<!-- Block Elemet -->
+<!-- Sebuah elemen yg memiliki lebar memenuhi tag parent -->
+
+<!-- 
+    <h1>My Dashboard</h1>
+
+    tag     : h1
+    content : 'My Dashboard'
+    elemenr : tag+content
+ -->
+
+ <!-- 
+     Padding : jarak dari content ke border
+     padding-top : pt
+     padding-right : pr
+     padding-bottom : pb
+     padding-left : pl
+     padding-left and padding-right :px
+     padding-top and padding-bottom :py
+
+     all side : p
+ -->
+
+  <!-- 
+     margin : jarak dari content ke border
+     margin-top : mt
+     margin-right : mr
+     margin-bottom : mb
+     margin-left : ml
+     margin-left and padding-right :mx
+     margin-top and padding-bottom :my
+
+     all side : m
+ -->
+
+ <!-- Margin Vertical -->
+<div class="mb-5 pt-3 pl-3 pb-3 text-white bg-primary">
+    Ini merupakan sebuah konten 1
+</div>
+
+<div class="mt-5 mb-2 py-3 text-white bg-secondary">
+    Ini merupakan sebuah konten 2
+</div>
+
+<div class="mt-3 my-5 px-3 text-white bg-success">
+    Ini merupakan sebuah konten 3
+</div>
+
+
+ <!-- Margin Horizontal -->
+ <div style="width:300px;" class="d-inline-block text-white bg-primary">
+    Ini merupakan sebuah konten 1
+</div>
+
+<div style="width:300px;" class="d-inline-block text-white bg-secondary">
+    Ini merupakan sebuah konten 2
+</div>
+
+<div style="width:300px;" class="d-inline-block text-white bg-success">
+    Ini merupakan sebuah konten 3
+</div>
+
+
+<!-- FORM -->
+<form class="mt-5 mb-5 form-group container">
+
+    <label for="name">Name : </label>
+    <input class="form-control" type="text" id="name">
+
+    <label for="pswd">Password :</label>
+    <input class="form-control" type="password" id="pswd">
+
+    <label for="email">E-mail :</label>
+    <input class="form-control" type="email" id="email">
+
+    <select class="mt-3 form-control">
+        <optgroup label="Merah">
+            <option>Merah Maroon</option>
+            <option>Merah Muda</option>
+        </optgroup>
+       
+        <optgroup label="Biru">
+            <option>Biru Dongker</option>
+            <option>Biru Laut</option>
+        </optgroup>
+        
+        <optgroup label="Hijau">
+            <option>Hijau Daun</option>
+        <option>Hijau Tosca</option>
+        </optgroup>
+    </select>
+
+
+<input class="btn btn-primary btn-block mt-3" type="button" value="Tekan Akyuuuh">
+<input class="btn btn-outline-primary btn-block mt-3" type="button" value="Tekan Akyuuh">
+
+
+<input class="btn btn-success btn-block mt-3" type="submit" value="Submit">
+<button class="btn btn-outline-success btn-block mt-3">Button</Button>
+
+</form>
+
+<!-- GRID dan FLEX -->
+
+<!-- GRID -->
+<!-- Akan membagi lebar element (parent) menjadi 12 bagian -->
+<!-- Digunakan untuk menentukan lebar dari element lain (child) -->
+
+<!-- FLEX -->
+<!-- Mengatur posisi element (child) -->
+
+<!-- Parent -->
+<div class="container"> 
+    <div style="height:500px;" class="d-flex row bg-secondary justify-content-between align-content-center">
+        <!-- Child -->
+        <div class="col-3 item bg-primary">Item 1</div>
+        <div class="col-3 item bg-success">Item 2</div>
+        <div class="col-3 item bg-warning">Item 3</div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
